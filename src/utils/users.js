@@ -63,12 +63,3 @@ module.exports = {
     getUser,
     getUsersInRoom
 }
-
-// addUser({
-//     id: 61,
-//     username: 'vaibhav',
-//     room: 'coders'
-// })
-
-// const user = getUser(61)
-// console.log(user)

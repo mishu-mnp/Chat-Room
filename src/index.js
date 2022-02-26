@@ -21,7 +21,7 @@ app.use(express.static(publicDirectoryPath))
 
 // do something when new client connects
 io.on('connection', (socket) => {
-    console.log('New Web Socket Connection')
+    // console.log('New Web Socket Connection')
     const admin = 'Alix Messer'
 
     // join users listener
@@ -79,6 +79,4 @@ io.on('connection', (socket) => {
 })
 
 
-server.listen(port, () => {
-    console.log('Server running at port ', port)
-})
+server.listen(port, () => { })

@@ -56,7 +56,7 @@ socket.on('message', ({ username, text, createdAt }) => {
 
 // Listening Chat location messages
 socket.on('locationMessage', ({ username, url, createdAt }) => {
-    console.log(url)
+    // console.log(url)
     const html = Mustache.render(locationTemplate, {
         username: username,
         url: url,
@@ -89,7 +89,7 @@ $messageForm.addEventListener('submit', (e) => {
         if (error) {
             return alert(error)
         }
-        console.log('Message Delivered!')
+        // console.log('Message Delivered!')
     })
 
 })
@@ -111,7 +111,7 @@ $sendLocationButton.addEventListener('click', () => {
             room: room
         }, () => {
             $sendLocationButton.removeAttribute('disabled')
-            console.log('Location Shared!')
+            // console.log('Location Shared!')
         })
     });
 })
